@@ -4,7 +4,8 @@ html, body {
       padding: 0;
 }
 
-img {max-width: 100%;}
+img {max-width: 100%;
+}
 
 body {
       display: grid;
@@ -13,6 +14,9 @@ body {
       grid-auto-rows: minmax(auto, auto);
       color: #3e3e3e;
       text-shadow: 0.4px 0.4px 0.4px rgba(0,0,0,.2);
+      background-image: url(img/love.jpg);
+      background-repeat: repeat-x;
+      background-size: 51% 100%;
 }
 
 h1 {
@@ -23,6 +27,7 @@ h1 {
 }
 
 #wrapper {
+      
       display: grid;
       grid-column: 3 / 11;
       grid-template-columns: repeat(3, 1fr);
@@ -39,7 +44,7 @@ h1 {
 
 #clock-box #clock {
       grid-column: 4 / 10;
-      background-color: #F8C8C8;
+      background-color: #F8C8C8; 
       padding: .6rem 2rem;
       padding-top: .8rem;
       text-align: center;
@@ -91,11 +96,14 @@ anni {
 #info .one {
       grid-column: 3 / 6;
       text-align: center;
+      color: #ec407a;
+
 }
 
 #info .two {
       grid-column: 8 / 11;
       text-align: center;
+      color: #ec407a;
 }
 
 footer {
@@ -114,7 +122,10 @@ footer {
 }
 
 #mask {
-      background-image: linear-gradient(to top, #6d44cc5d 0%, #f09cd880 100%);
+       background-image: linear-gradient(to top, #6d44cc5d 0%, #f09cd880 100%); 
+      /* background-image: url(img/love.jpg);
+      background-repeat: repeat-x;
+      background-size: 50% 100%; */
       opacity: .42;
       width: 100vw;
       height: 100vh;
